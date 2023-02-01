@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1675202603056' stop='1675202608865'>
+    <name>My Login application</name>
+    <title>My Login application</title>
+    <test-cases>
+        <test-case start='1675202603057' status='broken' stop='1675202608864'>
+            <name>should login with valid credentials</name>
+            <title>should login with valid credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-109.0.5414.120'/>
+            </parameters>
+            <steps>
+                <step start='1675202603059' status='passed' stop='1675202608535'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='20e42bcc-1494-4b3a-8807-a0e2827f77be-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1675202608536' status='passed' stop='1675202608555'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='438112ed-2e76-4122-bcdf-e94c63acc582-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='73955b6b-6a26-46cb-9ff8-e686e5a14e9c-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1675202608562' status='passed' stop='1675202608575'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='a8ba42a4-ab63-435f-b2e1-45a3df977e73-attachment.json' type='application/json' size='8384'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1675202608576' status='passed' stop='1675202608593'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='54fd46d1-d54f-4812-9d38-f76c5bcf0c1d-attachment.json' type='application/json' size='75'/>
+                        <attachment title='Response' source='e603e828-bbe8-49bc-b8f9-a3f306834a04-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1675202608598' status='broken' stop='1675202608864'>
+                    <name>POST /session/:sessionId/element/69250905-7ec3-4db9-a202-6db4c3490969/click</name>
+                    <title>POST /session/:sessionId/element/69250905-7ec3-4db9-a202-6db4c3490969/click</title>
+                    <attachments/>
+                    <steps>
+                        <step start='1675202608665' status='passed' stop='1675202608863'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='310d627d-009c-41d0-a01e-33c290b2d3d5-attachment.png' type='image/png' size='209966'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>element not interactable
+                  (Session info: chrome=109.0.5414.120)</message>
+                <stack-trace>element not interactable: element not interactable
+                  (Session info: chrome=109.0.5414.120)
+                    at processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
